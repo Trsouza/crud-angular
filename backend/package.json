@@ -1,0 +1,23 @@
+{
+  "name": "crud-angular",
+  "version": "1.0.0",
+  "description": "Crud with Angular 9, Cod3r Cursos",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trsouza/crud-angular.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trsouza/crud-angular/issues"
+  },
+  "homepage": "https://github.com/Trsouza/crud-angular#readme",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}
