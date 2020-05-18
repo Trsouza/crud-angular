@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     text-decoration: none; /* Remove o decorado quando passar o mouse em cima */
+    color: #000000;
 }
 .header .title-group {
     padding-left: 35px;
