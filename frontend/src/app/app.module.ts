@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +25,18 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/product/product-create/product-create.component'
 
 import { HttpClientModule } from '@angular/common/http';
-import { ProductReadComponent } from './components/product/product-read/product-read.component'
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductReadModeloComponent } from './components/product/product-read-modelo/product-read-modelo.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'
+
+import localePt from '@angular/common/locales/pt'  /* Esses imports faram com que os valores dos preços sejam exibidos com vírgulas e pontos nos locais corretos */
+import { registerLocaleData } from '@angular/common';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component'
+
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -37,6 +48,9 @@ import { ProductReadComponent } from './components/product/product-read/product-
     ProductCrudComponent,
     ProductCreateComponent,
     ProductReadComponent,
+    ProductReadModeloComponent,
+    ProductUpdateComponent,
+    ProductDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,9 +65,15 @@ import { ProductReadComponent } from './components/product/product-read/product-
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule 
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,  /* Paginação  veio do componente read-modelo */
+    MatSortModule 
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
