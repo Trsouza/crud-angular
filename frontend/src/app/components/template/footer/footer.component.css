@@ -3,6 +3,7 @@
     bottom: 0;
     display: flex;
     justify-content: flex-end;
+    background:#cde9eb
 }
 .footer > span {
     font-size: 0.75rem;

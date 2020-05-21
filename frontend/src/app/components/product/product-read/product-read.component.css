@@ -8,9 +8,17 @@ table {
 }
 
 .edit > i {
-    color: #eaef21
+    color: #00ce67
 }
 
 .delete > i{
-    color: #ec0d0d;
+    color: #e93d3d;
+}
+
+h3 {
+    margin: 0 0  0 20px;
+    padding-top: 10px;
+    color: #002743;
+    font-weight: 500;
+    font-size: 1rem;
 }

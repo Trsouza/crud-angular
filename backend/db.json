@@ -1,19 +1,29 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Caneta",
-            "price": 5.9
-        },
-        {
-            "id": 2,
-            "name": "Notebook",
-            "price": 3000.00
-        },
-        {
-            "id": 3,
-            "name": "Sansung s5",
-            "price": 2000.00
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta",
+      "price": "1.9"
+    },
+    {
+      "name": "lápis",
+      "price": "1.00",
+      "id": 3
+    },
+    {
+      "name": "Borracha",
+      "price": "0.9",
+      "id": 5
+    },
+    {
+      "name": "Kit pincéis",
+      "price": "9.99",
+      "id": 6
+    },
+    {
+      "name": "Apontador",
+      "price": "1.1",
+      "id": 7
+    }
+  ]
 }
