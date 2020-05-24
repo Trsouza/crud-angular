@@ -1,14 +1,19 @@
 table {
     width: 100%
-    
+}
+.text-center {
+    text-align: center;
 }
 
+th.mat-header-cell {
+    text-align: center;
+}
 .edit {
     margin-right: 10px;
 }
 
 .edit > i {
-    color: #00ce67
+    color: #002743;
 }
 
 .delete > i{

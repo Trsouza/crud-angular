@@ -9,6 +9,9 @@
         <mat-form-field>
             <input matInput placeholder="Preço (R$)" [value]="product.price" name="price" disabled>
         </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Quantidade" [value]="product.amount" name="amount" disabled>
+        </mat-form-field>
     </form>
 
     <button mat-raised-button (click)="cancel()">

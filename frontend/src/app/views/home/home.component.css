@@ -1,21 +1,44 @@
 .home .title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.2;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     color: #002743;
    
 }
 .home .subtitle {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 20px;
-    margin-bottom: 230px;
+    margin-bottom: 20px;
     text-align: center;
     color: #49aab1;
 
 }
 
-.home img {
-    width: 100vh;
+.banner {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+} 
+
+@media  (min-width: 768px) {
+
+.home .title {
+    font-size: 2.2rem;
+    margin-top: 30px;
+}
+.banner {
+    width: 70vh;
+    position:relative;
+    margin-bottom: 10px;
+    
+}
+.home .subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 }

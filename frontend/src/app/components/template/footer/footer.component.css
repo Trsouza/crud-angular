@@ -3,10 +3,24 @@
     bottom: 0;
     display: flex;
     justify-content: flex-end;
-    background:#cde9eb
+    background:#cde9eb;
+    height: 44px;
+    padding-top: 0.9rem;
 }
+
 .footer > span {
     font-size: 0.75rem;
     font-weight: 300;
     
+}
+
+/* .footer {
+    visibility: hidden;
+} */
+
+@media (min-width: 768px) {
+
+    .footer .mat-toolbar-single-row {
+        height: 44px;
+    }
 }

@@ -34,7 +34,10 @@ import { MatSortModule } from '@angular/material/sort'
 import localePt from '@angular/common/locales/pt'  /* Esses imports faram com que os valores dos preços sejam exibidos com vírgulas e pontos nos locais corretos */
 import { registerLocaleData } from '@angular/common';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
-import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component'
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatIconModule } from '@angular/material/icon';
+import { MainNav1Component } from './components/template/main-nav1/main-nav1.component'
 
 registerLocaleData(localePt);
 
@@ -51,6 +54,7 @@ registerLocaleData(localePt);
     ProductReadModeloComponent,
     ProductUpdateComponent,
     ProductDeleteComponent,
+    MainNav1Component,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +72,7 @@ registerLocaleData(localePt);
     FormsModule,
     MatTableModule,
     MatPaginatorModule,  /* Paginação  veio do componente read-modelo */
-    MatSortModule 
+    MatSortModule, LayoutModule, MatIconModule 
   ],
   providers: [{
     provide: LOCALE_ID,

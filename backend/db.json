@@ -3,27 +3,32 @@
     {
       "id": 1,
       "name": "Caneta",
-      "price": "1.9"
+      "price": "1.99",
+      "amount": "15"
     },
     {
       "name": "lápis",
       "price": "1.00",
-      "id": 3
+      "id": 3,
+      "amount": "20"
     },
     {
       "name": "Borracha",
       "price": "0.9",
-      "id": 5
+      "id": 5,
+      "amount": "13"
     },
     {
       "name": "Kit pincéis",
       "price": "9.99",
-      "id": 6
+      "id": 6,
+      "amount": "2"
     },
     {
       "name": "Apontador",
       "price": "1.1",
-      "id": 7
+      "id": 7,
+      "amount": "23"
     }
   ]
 }

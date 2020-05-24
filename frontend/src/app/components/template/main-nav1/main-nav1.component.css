@@ -1,0 +1,61 @@
+/* .sidenav-container {
+  height: 100%;
+} */
+
+.mat-toolbar {
+  background: #008B95;
+  padding-left: 0.5rem;
+}
+
+.mat-toolbar .logo {
+  height: 100px;
+  width: 100px;
+}
+.title-group a {
+  text-decoration: none; /* Remove o decorado quando passar o mouse em cima */
+  color: #FFFFFF;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+/* .mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+} */
+
+.sidenav {
+  background: #49aab1;
+  width: 135px;
+  /* margin-top: -14.3px; */
+}
+
+.sidenav a {
+  color: #FFFFFF;
+}
+
+.sidenav i {
+  padding-right: 10px;
+}
+
+.content {
+  padding: 16px;
+  background-color: #FFFFFF
+}
+
+.mat-list-item {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .mat-toolbar {
+    padding-left: 1rem;
+  }
+  .title-group a {
+      margin-left: 0px;
+      font-size: 1.6rem;
+  }
+  .mat-list-item {
+    font-size: 1rem;
+  }
+}
